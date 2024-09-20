@@ -4,9 +4,14 @@
 
     public function index()
     {
-      $db = new Carros_Model();
       
-
+      $db = new Carros_Model();
+      print_r($db->insert('carros', array(
+        "nome" => "Fiesta",
+        "marca" => "Ford",
+        "ano" => "2010",
+        "cor" => "Verde"
+      )));
       // $this->view('carrosIndex');
     }
     

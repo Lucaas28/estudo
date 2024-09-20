@@ -18,8 +18,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: veiculos
-      MYSQL_USER: lucas
-      MYSQL_PASSWORD: lucas
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
     ports:
       - "3306:3306"
     volumes:

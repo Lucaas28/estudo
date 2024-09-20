@@ -9,6 +9,10 @@ $separacao = explode ('/', $chave);
 $controller = $separacao[0];
 $action = ($separacao[1] == null ? 'index' : $separacao[1]);
 
+function __autoload ($file){
+   require_once('app/models/' . $file . '.php') ;
+}
+
 require_once('system/controller.php');
 require_once('system/model.php');
 
